@@ -46,7 +46,10 @@
     gopass-jsonapi
     nitrogen
     iosevka
+    fira
   ];
+
+  fonts.fontconfig.enable = true;
 
   # Neovim nightly overlay
   nixpkgs.overlays = [

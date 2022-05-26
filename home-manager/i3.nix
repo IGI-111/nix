@@ -2,11 +2,17 @@
   xsession = {
     enable = true;
 
-    windowManager.i3 = let mod = "Mod4";
+    windowManager.i3 = let
+      mod = "Mod4";
+      fonts = {
+        size = 10.0;
+        names = [ "Fira Sans" ];
+      };
     in {
       package = pkgs.i3-gaps;
       enable = true;
       config = {
+        fonts = fonts;
         modifier = mod;
         defaultWorkspace = "workspace number 1";
         terminal = "alacritty";
@@ -32,6 +38,7 @@
           "${mod}+q" = "focus parent";
         };
         bars = [{
+          fonts = fonts;
           position = "top";
           statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs ${
               ~/.config/i3status-rust/config-top.toml

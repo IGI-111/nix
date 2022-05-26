@@ -2,7 +2,21 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      font.size = 8;
+      font = {
+        size = 8;
+        normal = {
+          family = "Iosevka";
+          style = "Medium";
+        };
+        bold = {
+          family = "Iosevka";
+          style = "Medium";
+        };
+        italic = {
+          family = "Iosevka";
+          style = "Medium";
+        };
+      };
 
       colors = {
         primary = {

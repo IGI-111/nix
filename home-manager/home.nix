@@ -45,6 +45,7 @@
     gopass
     gopass-jsonapi
     nitrogen
+    iosevka
   ];
 
   # Neovim nightly overlay

@@ -44,9 +44,7 @@
   services.xserver = {
     enable = true;
     layout = "fr";
-    libinput = {
-      enable = true;
-    };
+    libinput = { enable = true; };
     displayManager = {
       defaultSession = "none+fake";
       session = let
@@ -74,9 +72,11 @@
     shell = pkgs.zsh;
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [ killall neovim wget git ];
+  environment.systemPackages = with pkgs; [ killall neovim curl git ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

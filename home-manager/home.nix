@@ -30,9 +30,16 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  programs.exa = {
+    enable = true;
+    enableAliases = true;
+  };
+
   home.packages = with pkgs; [
     htop
     ripgrep
+    fd
+    fzf
     brave
     xclip
     pavucontrol

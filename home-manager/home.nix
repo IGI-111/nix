@@ -48,6 +48,8 @@
     cargo
     rustc
     rustfmt
+    rust-analyzer
+    clippy
     nixfmt
     gopass
     gopass-jsonapi

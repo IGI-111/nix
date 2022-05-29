@@ -3,6 +3,7 @@
     enable = true;
     bars = {
       top = {
+        theme = "native";
         blocks = [
           {
             block = "sound";

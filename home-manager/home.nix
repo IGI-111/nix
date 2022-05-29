@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, overlays, ... }:
 
 {
   imports = [
@@ -60,12 +60,5 @@
 
   fonts.fontconfig.enable = true;
 
-  # Neovim nightly overlay
-  nixpkgs.overlays = [
-    (import (builtins.fetchTarball {
-      url =
-        "https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz";
-    }))
-  ];
-
+  nixpkgs.overlays = overlays;
 }

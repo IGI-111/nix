@@ -40,20 +40,25 @@
     ripgrep
     fd
     fzf
-    brave
     xclip
     pavucontrol
     gcc
+    brave
+    gopass
+    gopass-jsonapi
+    nitrogen
     neovim
+
     cargo
     rustc
     rustfmt
     rust-analyzer
     clippy
+
+    stylua
+
     nixfmt
-    gopass
-    gopass-jsonapi
-    nitrogen
+
     iosevka
     fira
   ];

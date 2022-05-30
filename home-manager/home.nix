@@ -55,6 +55,11 @@
     rust-analyzer
     clippy
 
+    deno
+    nodePackages.prettier
+
+    ocaml
+
     stylua
 
     nixfmt

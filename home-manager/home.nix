@@ -49,11 +49,8 @@
     nitrogen
     neovim
 
-    cargo
-    rustc
-    rustfmt
+    rustup
     rust-analyzer
-    clippy
 
     deno
     nodePackages.prettier

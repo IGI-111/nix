@@ -17,7 +17,7 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager = {
     enable = true;
-    dhcp = "dhcpcd";
+    dhcp = "internal";
   };
 
   # Set your time zone.
@@ -27,7 +27,7 @@
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
   networking.useDHCP = false;
-  networking.interfaces.wlp164s0.useDHCP = false;
+  networking.interfaces.wlp164s0.useDHCP = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
